@@ -1,1 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Schedule | The Nash Cut</title>
 
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+
+    body {
+      margin: 0;
+      min-height: 100vh;
+      background: radial-gradient(
+        circle at center,
+        #2a2a2a 0%,
+        #111 55%,
+        #050505 100%
+      );
+      color: #ffffff;
+      font-family: Arial, Helvetica, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      text-align: center;
+      padding: 24px;
+    }
+
+    .content {
+      max-width: 720px;
+      width: 100%;
+      padding: 48px 28px;
+      border: 1px solid rgba(255, 255, 255, 0.12);
+      border-radius: 24px;
+      background: rgba(0, 0, 0, 0.28);
+      box-shadow: 0 24px 80px rgba(0, 0, 0, 0.45);
+    }
+
+    .logo {
+      display: block;
+      width: min(420px, 85%);
+      height: auto;
+      margin: 0 auto 32px;
+    }
+
+    h1 {
+      margin: 0 0 30px;
+      font-size: clamp(2rem, 7vw, 3.5rem);
+    }
+
+    .event {
+      padding: 20px 0;
+      border-top: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .event:last-of-type {
+      border-bottom: 1px solid rgba(255, 255, 255, 0.15);
+    }
+
+    .event h2 {
+      margin: 0 0 8px;
+      font-size: 1.3rem;
+    }
+
+    .event p {
+      margin: 5px 0;
+      color: rgba(255, 255, 255, 0.75);
+    }
+
+    a {
+      color: #ffffff;
+      text-underline-offset: 5px;
+    }
+
+    nav {
+      margin-top: 32px;
+    }
+  </style>
+</head>
+
+<body>
+  <main class="content">
+    <a href="../">
+      <img
+        src="../Nash_logo_white.svg"
+        alt="The Nash Cut"
+        class="logo"
+      />
+    </a>
+
+    <h1>Schedule</h1>
+
+    <section class="event">
+      <h2>Event Name</h2>
+      <p>Saturday, August 15 · 8 PM</p>
+      <p>Venue Name · Charlotte, NC</p>
+    </section>
+
+    <section class="event">
+      <h2>Event Name</h2>
+      <p>Friday, August 28 · 9 PM</p>
+      <p>Venue Name · Charlotte, NC</p>
+    </section>
+
+    <nav>
+      <a href="../">← Back home</a>
+    </nav>
+  </main>
+</body>
+</html>
